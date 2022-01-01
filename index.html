@@ -1,12 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="./css/style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CV - Anna A Demeshkevich</title>
+    <link rel="icon" href="./img/favicon.ico">
 </head>
 <body>
+    <header>
+        <h2>rsschool-cv</h2> 
+        
+    </header>
+    <nav>
+        <ul>
+            <li>Contact information</li>
+            <li>Overall information</li>
+            <li>Skills</li>
+            <li>Code example</li>
+            <li>Projects</li>
+            <li>Education</li>
+            <li>Languages</li>
+        </ul>
+    </nav>
+    <main>
+        <img src="./img/Avatar.jpg" width="200" height="250" alt='photo' />
+        <div><h1>Anna A Demeshkevich</h1>
+        <h3>Junior Full Stack Python Developer</h3></div>
+        <div><h2>Contact information</h2>
+        <ul>
+            <li>Address: Minsk, Belarus;</li>
+            <li>E-mail: <i>dem2a6@gmail.com;</i></li>
+            <li>Phone: +375299759068</li>
+            <li>GitHub:<a href="https://github.com/dem2an">dem2an</a></li>
+            <li>LinkedIn:<a href="https://www.linkedin.com/in/anna-demeshkevich-23309a193">Anna A Demeshkevich</a></li>
+            <li>Telegram:<a href="https://t.me/Dem2an">@Dem2an</a></li>
+            <li>Discord Server: ann_demeshkevich (@dem2an)</li>
+        </ul></div>
+        <h2>Overall information</h2>
+        <p><b>Goal:</b> Study various technologies, language frameworks and platforms; create a portfolio of projects; improve skills; gain experience.<br>
+
+            <b>Priorities:</b> Python Backend, JS, CSS, HTML5 Frontend.<br>
+
+            <b>Strengths:</b> Desire to gain new knowledge; flexibility; hardworking; responsible; goal-oriented.<br></p>
+        <h2>Work experiense</h2>
+        <table>
+            <thead>
+                <th>Period</th>
+                <th>Work Experience</th>
+            </thead>
+            <tr>
+                <td>July 2019 — july 2019</td>
+                <td>Practice in National Center of E-Service, e-Government</td>
+            </tr>
+            <tr>
+                <td>February 2020 — april 2020</td>
+                <td>Ernst & Young Belarus, Intern</td>
+            </tr>
+            <tr>
+                <td>October 2020 — december 2020</td>
+                <td>Ernst & Young Belarus, Auditor's Assistant</td>
+            </tr>
+            <tr>
+                <td>December 2020 — currently</td>
+                <td>Ernst & Young Belarus, Core Business Support Learning & Development</td>
+            </tr>
+        </table>
+        <h2>Skills</h2>
+        <div class="skills-box">
+            <h3>Languages:</h3>
+            <ul>
+                <li>JavaScript - (in progress)</li>
+                <li>Python - (in progress)</i></li>
+                <li>C/C++ - (Basics)</li>
+                <li>HTML/CSS - (Basics)</li>
+            </ul>
+            <h3>DB:</h3>
+            <ul>
+                <li>SQL Server</li>
+                <li>MySQL</i></li>
+                <li>SQL lite</li>
+                <li>Postgre SQL</li>
+            </ul>
+            <h3>Frameworks:</h3>
+            <ul>
+                <li>Django</li>
+            </ul>
+            <h3>Version control systems:</h3>
+            <ul>
+                <li>Git / Github</li>
+            </ul>
+            <h3>Other programs and platforms:</h3>
+            <ul>
+                <li>Adobe Photoshop;</li>
+                <li>Adobe Premiere Pro/Adobe Rush;</li>
+                <li>Pycharm community;</li>
+                <li>Visual Studio;</a></li>
+                <li>Visuai Studio Code;</li>
+                <li>Alteryx;</li>
+                <li>SharePoint;</li>
+                <li>Zoom Meetings;</li>
+                <li>Qualtrics;</li>
+                <li>MS Outlook;</li>
+                <li>Mural;</a></li>
+                <li>SuccessFactors;</li>
+                <li>ServiceNOW;</li>
+                <li>Cisco WebEx;</li>
+                <li>Snagit..</li>
+            </ul>
+        </div>
+        <h2>
+            Code example:
+        </h2>
+        <pre>
+            <code>
+def search_by_date(feed, date, num):
+    temp = [False, 0]
+    new_feed = []
+    date = date[:4]+'-'+date[4:6]+'-'+date[6:]
+    for i in range(len(feed)):
+        if date in feed[i]['published']:
+            new_feed.append(feed[i])
+            temp[1] += 1
+            if temp[1] == num:
+                break
+        if temp[1] != 0:
+            temp[0] = True
+    if not temp[0]:
+        logs.logger.debug('Items are not found')
+        raise ValueError('Items are not found')
+    return new_feed, temp[1]
+            </code>
+        </pre>
+        <h2>
+            Projects
+        </h2>
+        <h3>RSS-parser - <a href='https://github.com/dem2an/RSS_reader/tree/dev'>Link to Github</a></h3>
+        <h2>Education:</h2>
+        <table>
+            <thead>
+                <th>Year</th>
+                <th>Type</th>
+            </thead>
+            <tr>
+                <td>2017-2021</td>
+                <td>Academy of Public Administration under the aegis of the President of the Republic of Belarus, Management of Informational Resources</td>
+            </tr>
+            <tr>
+                <td>2020</td>
+                <td>EY Summer Business Academy</td>
+            </tr>
+            <tr>
+                <td>2021</td>
+                <td>"PostgreSQL" - Course Netology</td>
+            </tr>
+            <tr>
+                <td>2021</td>
+                <td>"Introduction to SQL and working with a database" - Course Netology</td>
+            </tr>
+            <tr>
+                <td>2021</td>
+                <td>"Basics of site layout" - Course Netology</td>
+            </tr>
+        </table>
+        <h2>Languages:</h2>
+        <h3>English — B1 — Intermediate</h3>
+        <ul>
+            <li>I use language practice every day in my international team;</li>
+            <li>Practice in Duolingo;</li>
+            <li>EY english course.</li>
+        </ul>
+    </main>
+    <footer>
+        <a href="https://github.com/dem2an">dem2an</a> 2021
+        <a href="https://app.rs.school/">
+            <img src="https://app.rs.school/static/images/logo-rsschool3.png" width="50" alt="course logo">
+        </a>
+    </footer>
     
 </body>
 </html>

@@ -1,0 +1,24 @@
+header{
+    background-color:rgba(229,195,195,0.3)
+}
+nav{
+    list-style-type: square;
+    display: flex;
+}
+body{
+    background-color: rgba(205,188,126,0.2);
+    margin:1%;
+}
+main{
+    display: inline;
+    flex-wrap: wrap;
+}
+footer{
+    background-color:rgba(229,195,195,0.3);
+    justify-content:space-around;
+}
+.skills-box{
+    display: flex;
+    padding: 10px;
+    margin: 10px;
+}
