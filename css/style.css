@@ -79,8 +79,7 @@ html {
     text-align: left;
     padding-left: 30px ;
 }
-#Work-experiense{
-}
+
 .section {
     width: 45%;
     padding: 0px;
@@ -101,7 +100,6 @@ html {
     font-weight: 400;
     letter-spacing: 2px;
     color: #81a05e;
-    ;
 }
 .section-item {
     position: relative;
@@ -216,4 +214,8 @@ a:hover {
 
 .bold-text{
     font-weight: 900;
+}
+.contact-photo{
+    width: 25px;
+    height: auto;
 }
